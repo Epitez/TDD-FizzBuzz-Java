@@ -4,7 +4,7 @@ public class FizzBuzz {
 
 	@Override
 	public String toString() {
-		return "FizzBuzz []";
+		return "";
 	}
 
 }
