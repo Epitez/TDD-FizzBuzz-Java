@@ -7,8 +7,9 @@ import org.junit.jupiter.api.Test;
 class TestsFizzBuzz {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testFizzBuzz() {
+		FizzBuzz fizzBuzzUnderTest = new FizzBuzz();
+		assertEquals("", fizzBuzzUnderTest.toString(), "A la création, la valeur de FizzBuzz doit être vide");
 	}
 
 }
