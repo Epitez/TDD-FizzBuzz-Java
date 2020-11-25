@@ -18,6 +18,5 @@ class TestsFizzBuzz {
 		fizzBuzzUnderTest.setValue(1);
 		assertEquals("1", fizzBuzzUnderTest.toString(), "A la création, la valeur de FizzBuzz doit être vide");
 		
-	}
-	
+	}	
 }
