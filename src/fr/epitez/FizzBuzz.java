@@ -14,8 +14,7 @@ public class FizzBuzz {
 	}
 
 	public void setValue(int i) {
-		// TODO Auto-generated method stub
-		
+		this.value = "1";
 	}
 
 }
