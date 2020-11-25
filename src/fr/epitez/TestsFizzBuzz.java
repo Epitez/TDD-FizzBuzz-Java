@@ -8,15 +8,18 @@ import org.junit.jupiter.api.Test;
 class TestsFizzBuzz {
 	private FizzBuzz fizzBuzzUnderTest;
 	
+	@BeforeEach
+	void setUp() throws Exception {
+		this.fizzBuzzUnderTest = new FizzBuzz();
+	}
+	
 	@Test
 	void testFizzBuzz() {
-		this.fizzBuzzUnderTest = new FizzBuzz();
 		assertEquals("", this.fizzBuzzUnderTest.toString(), "A la création, la valeur de FizzBuzz doit être vide");
 	}
 
 	@Test
 	void testSetValue() {
-		this.fizzBuzzUnderTest = new FizzBuzz();
 		this.fizzBuzzUnderTest.setValue(1);
 		assertEquals("1", this.fizzBuzzUnderTest.toString(), "A la création, la valeur de FizzBuzz doit être vide");
 	}
