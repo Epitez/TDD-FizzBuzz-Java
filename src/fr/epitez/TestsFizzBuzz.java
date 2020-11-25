@@ -12,4 +12,12 @@ class TestsFizzBuzz {
 		assertEquals("", fizzBuzzUnderTest.toString(), "A la création, la valeur de FizzBuzz doit être vide");
 	}
 
+	@Test
+	void testSetValue() {
+		FizzBuzz fizzBuzzUnderTest = new FizzBuzz();
+		fizzBuzzUnderTest.setValue(1);
+		assertEquals("1", fizzBuzzUnderTest.toString(), "A la création, la valeur de FizzBuzz doit être vide");
+		
+	}
+	
 }
