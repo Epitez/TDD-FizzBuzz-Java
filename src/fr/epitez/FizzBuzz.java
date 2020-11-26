@@ -16,7 +16,7 @@ public class FizzBuzz {
 	public void setValue(int i) {
 		if (isMultipleOf3(i)) {
 			this.value = "Fizz";
-		} else if (i % 5 == 0) {
+		} else if (isMultipleOf5(i)) {
 			this.value = "Buzz";
 		} else {
 			this.value = String.valueOf(i);
@@ -25,6 +25,10 @@ public class FizzBuzz {
 
 	private static boolean isMultipleOf3(int value) {
 		return value % 3 == 0;
+	}
+
+	private static boolean isMultipleOf5(int value) {
+		return value % 5 == 0;
 	}
 
 }
