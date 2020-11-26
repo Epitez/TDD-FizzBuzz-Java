@@ -14,7 +14,7 @@ public class FizzBuzz {
 	}
 
 	public void setValue(int i) {
-		if(i == 3) {
+		if(i % 3 == 0) {
 			this.value = "Fizz";
 		} else {
 			this.value = String.valueOf(i);
