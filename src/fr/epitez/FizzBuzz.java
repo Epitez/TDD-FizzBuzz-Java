@@ -14,13 +14,16 @@ public class FizzBuzz {
 	}
 
 	public void setValue(int i) {
+		this.value = null;
 		if (isMultipleOf(i, 3 * 5)) {
 			this.value = "FizzBuzz";
 		} else if (isMultipleOf(i, 3)) {
 			this.value = "Fizz";
 		} else if (isMultipleOf(i,5)) {
 			this.value = "Buzz";
-		} else {
+		}
+		
+		if(this.value == null){
 			this.value = IntToString(i);
 		}
 	}
