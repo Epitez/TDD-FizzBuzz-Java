@@ -14,7 +14,9 @@ public class FizzBuzz {
 	}
 
 	public void setValue(int i) {
-		if (isMultipleOf(i, 3)) {
+		if (isMultipleOf(i, 3) && isMultipleOf(i, 5)) {
+			this.value = "FizzBuzz";
+		} else if (isMultipleOf(i, 3)) {
 			this.value = "Fizz";
 		} else if (isMultipleOf(i,5)) {
 			this.value = "Buzz";
