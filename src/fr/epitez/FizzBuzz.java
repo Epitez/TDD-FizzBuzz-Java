@@ -15,7 +15,7 @@ public class FizzBuzz {
 
 	public void setValue(int i) {
 		this.value = convertMultipleOfwith(i, 3,  "Fizz");
-		this.value += isMultipleOf(i,5) ? "Buzz" : "" ;
+		this.value += convertMultipleOfwith(i, 5,  "Buzz");
 		
 		if(this.value.isBlank()){
 			this.value = IntToString(i);
