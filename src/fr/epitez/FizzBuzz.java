@@ -24,11 +24,14 @@ public class FizzBuzz {
 	}
 
 	private static boolean isMultipleOf3(int value) {
-		return value % 3 == 0;
+		return isMultipleOf(value, 3);
 	}
 
 	private static boolean isMultipleOf5(int value) {
-		return value % 5 == 0;
+		return isMultipleOf(value, 5);
 	}
 
+	private static boolean isMultipleOf(int value, int multiple) {
+		return value % multiple == 0;
+	}
 }
