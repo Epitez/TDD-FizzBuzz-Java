@@ -30,4 +30,10 @@ class TestsFizzBuzz {
 		assertEquals("2", this.fizzBuzzUnderTest.toString(), "La valeur 2 se transforme en \"2\"");
 	}
 
+	@Test
+	void testFizz() {
+		this.fizzBuzzUnderTest.setValue(3);
+		assertEquals("Fizz", this.fizzBuzzUnderTest.toString(), "La valeur 3 se transforme en \"Fizz\"");
+	}
+
 }
