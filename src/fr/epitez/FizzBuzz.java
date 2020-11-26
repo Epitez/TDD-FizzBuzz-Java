@@ -14,7 +14,7 @@ public class FizzBuzz {
 	}
 
 	public void setValue(int i) {
-		this.value = null;
+		this.value = "";
 		if (isMultipleOf(i, 3 * 5)) {
 			this.value = "FizzBuzz";
 		} else if (isMultipleOf(i, 3)) {
@@ -23,7 +23,7 @@ public class FizzBuzz {
 			this.value = "Buzz";
 		}
 		
-		if(this.value == null){
+		if(this.value.isBlank()){
 			this.value = IntToString(i);
 		}
 	}
