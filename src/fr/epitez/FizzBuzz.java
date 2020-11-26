@@ -14,7 +14,15 @@ public class FizzBuzz {
 	}
 
 	public void setValue(int i) {
-		this.value = String.valueOf(i);
+		if(isMultipleOf3(i)) {
+			this.value = "Fizz";
+		} else {
+			this.value = String.valueOf(i);
+		}
+	}
+
+	private static boolean isMultipleOf3(int value) {
+		return value % 3 == 0;
 	}
 
 }
