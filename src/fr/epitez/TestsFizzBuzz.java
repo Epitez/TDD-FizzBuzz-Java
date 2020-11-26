@@ -19,9 +19,8 @@ class TestsFizzBuzz {
 	}
 
 	@Test
-	void testSetValue() {
+	void testSetValue_1() {
 		this.fizzBuzzUnderTest.setValue(1);
-		assertEquals("1", this.fizzBuzzUnderTest.toString(), "A la création, la valeur de FizzBuzz doit être vide");
+		assertEquals("1", this.fizzBuzzUnderTest.toString(), "La valeur 1 se transforme en \"1\"");
 	}
-	
 }
