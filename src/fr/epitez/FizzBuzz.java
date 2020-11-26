@@ -14,13 +14,16 @@ public class FizzBuzz {
 	}
 
 	public void setValue(int i) {
-		if (isMultipleOf(i, 3)) {
-			this.value = "Fizz";
-		} else if (isMultipleOf(i,5)) {
-			this.value = "Buzz";
-		} else {
+		this.value = convertMultipleOfwith(i, 3,  "Fizz");
+		this.value += convertMultipleOfwith(i, 5,  "Buzz");
+		
+		if(this.value.isBlank()){
 			this.value = IntToString(i);
 		}
+	}
+
+	private static String convertMultipleOfwith(int value, int multiple, String replacement) {
+		return isMultipleOf(value, multiple) ? replacement : "";
 	}
 
 	private static boolean isMultipleOf(int value, int multiple) {
