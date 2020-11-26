@@ -23,4 +23,11 @@ class TestsFizzBuzz {
 		this.fizzBuzzUnderTest.setValue(1);
 		assertEquals("1", this.fizzBuzzUnderTest.toString(), "La valeur 1 se transforme en \"1\"");
 	}
+
+	@Test
+	void testSetValue_2() {
+		this.fizzBuzzUnderTest.setValue(2);
+		assertEquals("2", this.fizzBuzzUnderTest.toString(), "La valeur 2 se transforme en \"2\"");
+	}
+
 }
