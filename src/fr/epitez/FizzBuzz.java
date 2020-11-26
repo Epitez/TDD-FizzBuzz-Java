@@ -14,21 +14,13 @@ public class FizzBuzz {
 	}
 
 	public void setValue(int i) {
-		if (isMultipleOf3(i)) {
+		if (isMultipleOf(i, 3)) {
 			this.value = "Fizz";
-		} else if (isMultipleOf5(i)) {
+		} else if (isMultipleOf(i,5)) {
 			this.value = "Buzz";
 		} else {
 			this.value = String.valueOf(i);
 		}
-	}
-
-	private static boolean isMultipleOf3(int value) {
-		return isMultipleOf(value, 3);
-	}
-
-	private static boolean isMultipleOf5(int value) {
-		return isMultipleOf(value, 5);
 	}
 
 	private static boolean isMultipleOf(int value, int multiple) {
