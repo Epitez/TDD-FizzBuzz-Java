@@ -14,7 +14,7 @@ public class FizzBuzz {
 	}
 
 	public void setValue(int i) {
-		this.value = "1";
+		this.value = String.valueOf(i);
 	}
 
 }
