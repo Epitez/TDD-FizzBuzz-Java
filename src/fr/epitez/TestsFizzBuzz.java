@@ -36,4 +36,10 @@ class TestsFizzBuzz {
 		assertEquals("Fizz", this.fizzBuzzUnderTest.toString(), "La valeur 3 se transforme en \"Fizz\"");
 	}
 
+	@Test
+	void testFizzMultiple3() {
+		this.fizzBuzzUnderTest.setValue(12);
+		assertEquals("Fizz", this.fizzBuzzUnderTest.toString(), "Les valeurs multiple de 3 se transforment en \"Fizz\"");
+	}
+
 }
